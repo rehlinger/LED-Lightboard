@@ -19,7 +19,6 @@ int BluetoothData;// received data
 char temp;
 String inputString="";
 String sentTxt="";
-
 int startingOffset = 9;// screen offset from max LED position (L->R) [0-x]
 int displayLength = 19;// length of desired screen pixels
 int trailingOffset = 5; 
@@ -52,7 +51,6 @@ void setup() {
 
 void loop() {
   LED.fillScreen(0);
-
   for (int i = 0; i <= timesRepeated; i++) {
     LED.setTextColor(colors[nextColorQueue[i]]);
     LED.setCursor(startingOffset+from0[i], 6);
